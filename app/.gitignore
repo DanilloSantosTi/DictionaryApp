@@ -1,0 +1,49 @@
+# Arquivos de compilação e diretórios
+build/
+bin/
+gen/
+out/
+
+# Arquivos de configuração do Android Studio
+*.iml
+.gradle/
+local.properties
+/.idea/workspace.xml
+/.idea/libraries
+
+# Arquivos de construção do Android Studio
+/.idea/modules.xml
+/.idea/misc.xml
+/.idea/navigation.xml
+/.idea/vcs.xml
+/.idea/gradle.xml
+
+# Logs e arquivos de saída
+*.log
+*.lock
+*.backup
+*.apk
+
+# Arquivos de depuração
+*.class
+*.jar
+*.war
+*.ear
+
+# Arquivos gerados por ferramentas de geração de código
+/build/
+/captures/
+/gradle/
+/local.properties
+/gradlew
+/gradlew.bat
+/idea/
+/app/build/
+
+# Dependências específicas do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Android Studio 4.1+ específico
+*.kotlin_module
+.idea/

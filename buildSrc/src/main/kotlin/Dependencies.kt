@@ -52,8 +52,15 @@ object Dependencies {
         const val glide = "com.github.bumptech.glide:glide:${Versions.glideVersion}"
     }
 
-    object Moshi {
+    object Moshi: GroupLibs {
         const val moshi = "com.squareup.moshi:moshi:${Versions.moshiVersion}"
+        const val moshiConvert = "com.squareup.retrofit2:converter-moshi:${Versions.retrofitVersion}"
+
+        override val list: List<String>
+            get() = listOf(
+                Moshi.moshi,
+                Moshi.moshiConvert
+            )
     }
 
     object Compose : GroupLibs {

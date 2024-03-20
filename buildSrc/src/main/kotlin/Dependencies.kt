@@ -17,6 +17,7 @@ object Dependencies {
 
     object Module {
         const val core_network = ":core-network"
+        const val core_database = ":core-database"
     }
 
     val modules: List<String> by lazy {
@@ -52,9 +53,10 @@ object Dependencies {
         const val glide = "com.github.bumptech.glide:glide:${Versions.glideVersion}"
     }
 
-    object Moshi: GroupLibs {
+    object Moshi : GroupLibs {
         const val moshi = "com.squareup.moshi:moshi:${Versions.moshiVersion}"
-        const val moshiConvert = "com.squareup.retrofit2:converter-moshi:${Versions.retrofitVersion}"
+        const val moshiConvert =
+            "com.squareup.retrofit2:converter-moshi:${Versions.retrofitVersion}"
 
         override val list: List<String>
             get() = listOf(
@@ -79,6 +81,21 @@ object Dependencies {
                 Compose.composeUiTooling,
                 Compose.material3
             )
+    }
+
+    object Room : GroupLibs {
+        const val roomRuntime = "androidx.room:room-runtime:${Versions.room}"
+        const val roomKtx = "androidx.room:room-ktx:${Versions.room}"
+
+        override val list: List<String>
+            get() = listOf(
+                Room.roomKtx,
+                Room.roomKtx
+            )
+    }
+
+    object RoomCompilerKapt {
+        const val roomCompiler = "androidx.room:room-compiler:${Versions.room}"
     }
 
     object UnitTest : GroupLibs {

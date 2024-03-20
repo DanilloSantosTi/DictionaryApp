@@ -1,8 +1,19 @@
 package com.dms.core_network.data.model
 
+import com.dms.core_network.domain.model.Definition
+
 data class DefinitionDto(
-    val antonyms: List<Any>,
+    val antonyms: List<String>,
     val definition: String,
-    val example: String,
-    val synonyms: List<Any>
-)
+    val example: String?,
+    val synonyms: List<String>
+) {
+    fun toDefinition(): Definition {
+        return Definition(
+            antonyms = antonyms,
+            definition = definition,
+            example = example,
+            synonyms = synonyms
+        )
+    }
+}

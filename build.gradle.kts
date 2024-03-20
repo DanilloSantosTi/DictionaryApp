@@ -11,6 +11,7 @@ buildscript {
         classpath(Dependencies.Gradle.kotlinGradlePlugin)
         classpath(Dependencies.Gradle.androidTools)
         classpath(kotlin(Dependencies.Gradle.gradlePlugin, Versions.kotlinVersion))
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10")
     }
 }
 

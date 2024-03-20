@@ -13,4 +13,5 @@ object Versions {
     const val glideVersion = "4.16.0"
     const val moshiVersion = "1.15.0"
     const val hiltVersion = "2.44"
+    const val room = "2.3.0"
 }
